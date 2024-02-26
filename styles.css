@@ -147,6 +147,11 @@ a {
     pointer-events: none;
     opacity: 0;
     transition: top .4s, opacity .3s;
+
+    .container img {
+      max-width: 100%;
+      height: auto;
+    }
   }
   .nav__menu::-webkit-scrollbar {
     width: 0;
