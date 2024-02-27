@@ -31,6 +31,9 @@
 @media screen and (min-width: 1024px) {
   :root {
     --normal-font-size: 1rem;
+    .section-heading {
+      font-size: 1.5rem; /* Set a smaller font size for mobile devices */
+    }
   }
 }
 
@@ -39,6 +42,10 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
 
 body {
@@ -65,7 +72,7 @@ a {
 
 /*=============== HEADER ===============*/
 .header {
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   width: 100%;
@@ -322,4 +329,87 @@ a {
     pointer-events: initial;
     transition: top .3s;
   }
+}
+
+.sectionone {
+  width: 100%;
+  height: 40vh;
+  background-color: #EF5354;
+  text-align: center;
+}
+
+.sectionone,
+.sectiontwo,
+.sectionthree {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+  padding: 0 1rem; /* Add some padding to the left and right for mobile devices */
+  box-sizing: border-box;
+  padding: 5px;
+  padding-bottom: 30px;
+}
+
+.sectionone h1 {
+  position: relative;
+  font-size: 50px;
+  color: black;
+  margin-left: 20px;
+  top: 10px;
+  padding: 10px;
+}
+
+.sectionone p{
+  position: relative;
+  font-size: 20px;
+  font-weight: 300;
+  top: 20px;
+  padding: 10px;
+}
+
+.sectiontwo {
+  width: 100%;
+  height: 60vh;
+  background-color: lightblue;
+  text-align: center;
+}
+
+.sectiontwo h1 {
+  position: relative;
+  font-size: 50px;
+  color: black;
+  margin-left: 20px;
+  top: 20px;
+  padding: 20px;
+}
+
+.sectiontwo h3 {
+  position: relative;
+  font-size: 25px;
+  bottom: 10px;
+  padding: 10px;
+}
+
+.sectiontwo p{
+  position: relative;
+  font-size: 20px;
+  font-weight: 300;
+  bottom: 20px;
+}
+
+.sectionthree {
+  width: 100%;
+  height: 40vh;
+  background-color: lightgreen;
+  text-align: center;
+}
+
+.sectionthree p{
+  font-size: 20px;
+  position: relative;
+  top: 10x;
+  margin-bottom: 30px;
 }
