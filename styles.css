@@ -147,11 +147,6 @@ a {
     pointer-events: none;
     opacity: 0;
     transition: top .4s, opacity .3s;
-
-    .container img {
-      max-width: 100%;
-      height: auto;
-    }
   }
   .nav__menu::-webkit-scrollbar {
     width: 0;
@@ -402,20 +397,22 @@ a {
 
 .sectionthree {
   width: 100%;
-  height: 40vh;
+  height: 50vh;
   background-color: lightskyblue;
   text-align: center;
 }
 
 .sectionthree img {
-  display: inline-block;
+  display: flex;
   position: relative;
   top: 20px;
+  margin-bottom: 40px;
 }
 .sectionthree p{
   font-size: 20px;
   position: relative;
-  top: 30px;
+  top: 10x;
+  margin-bottom: 30px;
 }
 
 .sectionone,
