@@ -339,8 +339,7 @@ a {
 }
 
 .sectionone,
-.sectiontwo,
-.sectionthree {
+.sectiontwo {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -357,17 +356,29 @@ a {
   position: relative;
   font-size: 50px;
   color: black;
-  margin-left: 20px;
+  margin-left: 30%;
   top: 10px;
   padding: 10px;
 }
 
 .sectionone p{
   position: relative;
-  font-size: 20px;
+  font-size: 25px;
   font-weight: 300;
   top: 20px;
   padding: 10px;
+}
+
+.sectionone .sejajar {
+  display: flex;
+  flex-direction: row;
+}
+
+.sectionone img{
+  width: 800px;
+  height: 400px;
+  object-fit: cover;
+  object-position: 10% 20%;
 }
 
 .sectiontwo {
@@ -377,11 +388,22 @@ a {
   text-align: center;
 }
 
+.sectiontwo .sejajar {
+  display: flex;
+  flex-direction: row;
+}
+
+.sectiontwo img{
+  width: 300px;
+  height: 300px;
+  object-fit: fill;
+}
+
 .sectiontwo h1 {
   position: relative;
   font-size: 50px;
   color: black;
-  margin-left: 20px;
+  margin-left: 20%;
   top: 20px;
   padding: 20px;
 }
@@ -402,14 +424,53 @@ a {
 
 .sectionthree {
   width: 100%;
-  height: 40vh;
+  height: 97vh;
   background-color: lightgreen;
+  padding: 0 1rem; /* Add some padding to the left and right for mobile devices */
+  box-sizing: border-box;
+  padding-bottom: 30px;
+  text-align: justify;
+  align-items: center;
+}
+
+.sectionthree h1 {
+  font-size: 50px;
   text-align: center;
+  padding: 10px;
+  padding-left: 500px;
+}
+
+.sectionthree h3{
+  text-align: center;
+  padding: 5px;
 }
 
 .sectionthree p{
   font-size: 20px;
-  position: relative;
   top: 10x;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
+  padding: 2px;
+}
+
+.sectionthree .sejajar {
+  display: flex;
+  flex-direction: row;
+}
+
+.sectionthree img {
+  width: 500px;
+  height: 550px;
+  padding: 10px;
+}
+
+.sectionthree .transparent-block {
+  background-color: transparent; /* Transparent background */
+  justify-content: space-between; /* This will justify the text */
+  padding: 10px; /* Add some padding for better readability */
+  box-sizing: border-box;
+  size: 1px;
+  width: 60%;
+  height: 200px;
+  margin-right: 10px;
+  padding-left: 100px;
 }
