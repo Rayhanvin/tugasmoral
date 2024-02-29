@@ -70,6 +70,13 @@ a {
   margin-inline: 1.5rem;
 }
 
+@font-face {
+  font-family: 'peanut_butterregular';
+  src: url('peanut_butter-webfont.woff2') format('woff2'),
+       url('peanut_butter-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 /*=============== HEADER ===============*/
 .header {
   position: sticky;
@@ -331,37 +338,81 @@ a {
   }
 }
 
+.sectionone h1,
+.sectiontwo h1,
+.sectionthree h1 {
+  font-family: 'peanut_butterregular';
+  letter-spacing: 3px;
+  color: white;
+}
+
 .sectionone {
   width: 100%;
   height: 50vh;
-  background-color: #EF5354;
+  background-color: #313B72;
   text-align: center;
 }
 
-.sectionone h1, 
-.sectiontwo h1, 
-.sectionthree h1 {
+.sectionone .sejajar {
+  display: flex;
+  flex-direction: row;
+}
+
+.sectionone img{
+  width: 400px;
+  height: 400px;
+  padding: 5px;
+  margin-bottom: 10px;
+  bottom: 30px;
+  position: relative;
+}
+.sectionone h1 {
   position: relative;
   font-size: 50px;
-  color: black;
   margin-left: 20px;
   top: 10px;
   text-align: center;
 }
 
+.sectiontwo h1, 
+.sectionthree h1 {
+  position: relative;
+  font-size: 50px;
+  margin-left: 20px;
+  top: 10px;
+  text-align: center;
+  left: 180px;
+  color: black;
+}
+
 .sectionone p{
   position: relative;
-  font-size: 25px;
+  font-size: 30px;
   font-weight: 300;
   top: 10px;
   padding: 15px;
   padding-bottom: 30px;
+  text-align: justify;
+  color: #E4EAEE;
+}
+
+.sectionone .transparent-block {
+  background-color: transparent; /* Transparent background */
+  justify-content: space-between; /* This will justify the text */
+  padding: 10px; /* Add some padding for better readability */
+  box-sizing: border-box;
+  size: 1px;
+  width: 70%;
+  width: 900px;
+  height: 200px;
+  margin-right: 10px;
+  padding-left: 0px;
 }
 
 .sectiontwo {
   width: 100%;
   height: 60vh;
-  background-color: #4CAF50;
+  background-color: #3AAFB9;
   text-align: center;
 }
 
@@ -376,18 +427,47 @@ a {
 
 .sectiontwo .type p {
   font-size: 20px;
-  padding: 10px;
+  padding: 4px;
   padding-bottom: 20px;
+  text-align: justify;
+}
+
+.sectiontwo .sejajar {
+  display: flex;
+  flex-direction: row;
+}
+
+.sectiontwo img {
+  max-width: 90%;
+  max-height: 70%;
+  float: left;
+  width: 800px;
+  height: 400px;
+  position: relative;
+  bottom: 25px;
+  padding: 0px;
+  left: 30px;
+}
+
+.sectiontwo .fade{
+  animation-name: fade;
+  animation-duration: 2.5s;
+}
+
+@keyframes fade {
+  from {opacity: .5}
+  to {opacity: 1}
 }
 
 .sectionthree {
   width: 100%;
-  height: 100%;
-  background-color: lightskyblue;
+  height: 50vh;
+  background-color: #97C8EB;
   align-items: center;
   padding: 0 1rem; /* Add some padding to the left and right for mobile devices */
   box-sizing: border-box;
-  padding-bottom: 30px;
+  padding-bottom: 5px;
+  padding-top: 10px;
 }
 
 .sectionthree .sejajar {
@@ -396,11 +476,12 @@ a {
 }
 
 .sectionthree img {
-  max-width: 80%;
+  max-width: 100%;
   max-height: 70%;
+  padding: 10px;
   float: left;
-  width: 5000px;
-  height: 400px;
+  width: 3500px;
+  height: 300px;
 }
 
 .sectionthree .fade{
@@ -415,9 +496,11 @@ a {
 
 .sectionthree p{
   font-size: 20px;
-  padding-left: 20px;
+  padding-left: 25px;
   padding-top: 20px;
   float: left;
+  text-align: justify;
+  padding-bottom: 5px;
 }
 
 .sectionone,

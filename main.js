@@ -14,18 +14,36 @@ const showMenu = (toggleId, navId) =>{
  
  showMenu('nav-toggle','nav-menu')
 
- let index = 0;
-displayImages();
-function displayImages() {
-  let i;
-  const images = document.getElementsByClassName("image");
-  for (i = 0; i < images.length; i++) {
-    images[i].style.display = "none";
-  }
-  index++;
-  if (index > images.length) {
-    index = 1;
-  }
-  images[index-1].style.display = "block";
-  setTimeout(displayImages, 2000); 
-}
+ let index1 = 0;
+ let index2 = 0;
+ 
+ displayImages1();
+ displayImages2();
+ 
+ function displayImages1() {
+   let i;
+   const images1 = document.getElementsByClassName("images");
+   for (i = 0; i < images1.length; i++) {
+     images1[i].style.display = "none";
+   }
+   index1++;
+   if (index1 > images1.length) {
+     index1 = 1;
+   }
+   images1[index1-1].style.display = "block";
+   setTimeout(displayImages1, 2000); 
+ }
+ 
+ function displayImages2() {
+   let i;
+   const images2 = document.getElementsByClassName("image");
+   for (i = 0; i < images2.length; i++) {
+     images2[i].style.display = "none";
+   }
+   index2++;
+   if (index2 > images2.length) {
+     index2 = 1;
+   }
+   images2[index2-1].style.display = "block";
+   setTimeout(displayImages2, 2000); 
+ }

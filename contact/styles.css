@@ -27,6 +27,10 @@
   --z-fixed: 100;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 /*========== Responsive typography ==========*/
 @media screen and (min-width: 1024px) {
   :root {
@@ -326,10 +330,10 @@ a {
 
 .sectionone {
   width: 100%;
-  height: 50vh;
+  height: 60vh;
   background-color: #EF5354;
   text-align: center;
-  margin-top: 80px;
+  margin-top: 70px;
 }
 
 .sectionone h1 {
@@ -337,14 +341,16 @@ a {
   font-size: 50px;
   color: black;
   margin-left: 20px;
-  top: 10px;
+  top: 30px;
   text-align: center;
   padding-bottom: 30px;
+  font-family: 'peanut_butterregular';
+  letter-spacing: 3px;
 }
 
 .sectionone h3 {
   font-size: 30px;
-  padding-bottom: -5px;
+  padding-bottom: -50px;
 }
 
 .sectionone p{
@@ -354,11 +360,18 @@ a {
   top: 10px;
   padding: 2px;
   padding-bottom: 30px;
+  text-align: justify;
 }
 
-.sectionone,
-.sectiontwo,
-.sectionthree {
+.sectionone img {
+  position: relative;
+  width: 650px;
+  height: 550px;
+  top: 50px;
+  padding: 20px;
+}
+
+.sectionone {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -367,4 +380,25 @@ a {
   text-align: center;
   padding: 0 1rem; /* Add some padding to the left and right for mobile devices */
   box-sizing: border-box;
+}
+
+.sectionone .sejajar {
+  display: flex;
+  flex-direction: row;
+}
+
+.sectionone .pisah {
+  display: none;
+  flex-direction: row;
+  position: relative;
+  right: 650px;
+  margin-top: -475px
+}
+
+@font-face {
+  font-family: 'peanut_butterregular';
+  src: url('peanut_butter-webfont.woff2') format('woff2'),
+       url('peanut_butter-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
